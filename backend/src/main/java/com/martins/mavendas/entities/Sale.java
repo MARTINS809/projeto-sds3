@@ -19,7 +19,7 @@ public class Sale {
 	private Long id;
 	private Integer visited;
 	private Integer deals;
-	private Integer amount;
+	private Double amount;
 	private LocalDate date;
 	
 	@ManyToOne
@@ -30,7 +30,7 @@ public class Sale {
 		
 	}
 
-	public Sale(Long id, Integer visited, Integer amount, LocalDate date, Seller seller) {
+	public Sale(Long id, Integer visited, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
 		this.visited = visited;
 		this.amount = amount;
@@ -60,11 +60,11 @@ public class Sale {
 	public void setDeals(Integer deals) {
 		this.deals = deals;
 	}
-	public Integer getAmount() {
+	public Double getAmount() {
 		return amount;
 	}
 
-	public void setAmount(Integer amount) {
+	public void setAmount(Double amount) {
 		this.amount = amount;
 	}
 
