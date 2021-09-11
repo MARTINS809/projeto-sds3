@@ -21,6 +21,7 @@ public class Seller {
 
 	@OneToMany(mappedBy = "seller")
 	private List<Sale> sales = new ArrayList<>();
+	
 	public Seller() {
 		
 	}

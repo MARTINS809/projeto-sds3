@@ -2,6 +2,7 @@ package com.martins.mavendas.dto;
 
 import java.time.LocalDate;
 
+
 import com.martins.mavendas.entities.Sale;
 
 public class SaleDTO {
